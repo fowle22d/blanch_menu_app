@@ -1,5 +1,6 @@
+import 'package:blanch_menu_app/stationPage.dart';
 import 'package:flutter/material.dart'; // Material contains logic for prebuilt Flutter widgets
-import 'view/pages/home_page.dart';
+//import 'view/pages/home_page.dart';
 
 // main calls runApp on the root widget for the app
 void main() => runApp(BlanchMenuApp());
@@ -21,7 +22,7 @@ class BlanchMenuApp extends StatelessWidget {
         brightness: Brightness.light,
       ),
       // Define the home page for the app (code for widget can be found in /lib/view/pages/home_page.dart)
-      home: HomePage(),
+      home: StationPage(),
     );
   }
 }
