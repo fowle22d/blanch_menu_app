@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1029817767358",
+    "project_id": "blanch-menu-app",
+    "storage_bucket": "blanch-menu-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029817767358:android:c07103807fbb678e8095ef",
+        "android_client_info": {
+          "package_name": "com.example.blanch_menu_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029817767358-uvgnio81c6bsm4d4mjcdq5gki6svpc2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBywZZttVwNBQnJeHgcDFgGcVfJ0vyCBQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029817767358-uvgnio81c6bsm4d4mjcdq5gki6svpc2t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1029817767358-0ulg94gd10if5aq1srt7g5c48sj7ber0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.souvikbiswas.flutterfireSamples"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
