@@ -4,7 +4,7 @@ import 'package:blanch_menu_app/view/widgets/post_card.dart';
 // Create stateless HomePage widget
 class HomePage extends StatelessWidget {
   // The constructor for the HomePage widget
-  const HomePage({Key key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   // Create and return a Scaffold widget
   @override

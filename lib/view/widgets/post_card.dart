@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:blanch_menu_app/helper/demo_values.dart';
 
 class PostCard extends StatelessWidget {
-  const PostCard({Key key}) : super(key: key);
+  const PostCard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class PostCard extends StatelessWidget {
 }
 
 class _Post extends StatelessWidget {
-  const _Post({Key key}) : super(key: key);
+  const _Post({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -42,11 +42,11 @@ class _Post extends StatelessWidget {
 }
 
 class _PostTitle extends StatelessWidget {
-  const _PostTitle({Key key}) : super(key: key);
+  const _PostTitle({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final TextStyle titleTheme = Theme.of(context).textTheme.headline5;
+    final TextStyle? titleTheme = Theme.of(context).textTheme.headline5;
     final String title = DemoValues.postTitle;
 
     return Expanded(
@@ -60,11 +60,11 @@ class _PostTitle extends StatelessWidget {
 }
 
 class _PostText extends StatelessWidget {
-  const _PostText({Key key}) : super(key: key);
+  const _PostText({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final TextStyle pTextTheme = Theme.of(context).textTheme.subtitle1;
+    final TextStyle? pTextTheme = Theme.of(context).textTheme.subtitle1;
     final String pText = DemoValues.postText;
 
     return Expanded(flex: 7, child: Text(pText, style: pTextTheme));
@@ -72,7 +72,7 @@ class _PostText extends StatelessWidget {
 }
 
 class _PostDetails extends StatelessWidget {
-  const _PostDetails({Key key}) : super(key: key);
+  const _PostDetails({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -86,12 +86,12 @@ class _PostDetails extends StatelessWidget {
 }
 
 class _UserNameAndEmail extends StatelessWidget {
-  const _UserNameAndEmail({Key key}) : super(key: key);
+  const _UserNameAndEmail({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final TextStyle nameTheme = Theme.of(context).textTheme.subtitle;
-    final TextStyle emailTheme = Theme.of(context).textTheme.body1;
+    final TextStyle? nameTheme = Theme.of(context).textTheme.subtitle;
+    final TextStyle? emailTheme = Theme.of(context).textTheme.body1;
 
     return Expanded(
       flex: 5,
@@ -112,11 +112,11 @@ class _UserNameAndEmail extends StatelessWidget {
 }
 
 class _PostTimeStamp extends StatelessWidget {
-  const _PostTimeStamp({Key key}) : super(key: key);
+  const _PostTimeStamp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final TextStyle timeTheme = Theme.of(context).textTheme.button;
+    final TextStyle? timeTheme = Theme.of(context).textTheme.button;
 
     return Expanded(
       flex: 2,
