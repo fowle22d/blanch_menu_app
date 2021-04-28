@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterfire_samples/res/custom_colors.dart';
+import 'package:blanch_menu_app/res/custom_colors.dart';
 
 class AppBarTitle extends StatelessWidget {
   @override
