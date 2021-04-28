@@ -19,16 +19,16 @@
 	<key>STORAGE_BUCKET</key>
 	<string>blanch-menu-app.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1029817767358:ios:f5dfab5db6ad335b8095ef</string>
+	<string>1:1029817767358:ios:781ef8c0f469a8868095ef</string>
 </dict>
 </plist>
