@@ -1,5 +1,5 @@
 import 'package:blanch_menu_app/stationPage.dart';
-import 'package:blanch_menu_app/screens/sign_in_screen.dart';
+import 'package:blanch_menu_app/view/pages/sign_in_screen.dart';
 import 'package:flutter/material.dart'; // Material contains logic for prebuilt Flutter widgets
 //import 'view/pages/home_page.dart';
 

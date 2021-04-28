@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:blanch_menu_app/res/custom_colors.dart';
-import 'package:blanch_menu_app/screens/sign_in_screen.dart';
+import 'package:blanch_menu_app/view/pages/sign_in_screen.dart';
 import 'package:blanch_menu_app/utils/authentication.dart';
 import 'package:blanch_menu_app/view/widgets/app_bar_title.dart';
 

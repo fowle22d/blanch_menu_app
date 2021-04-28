@@ -1,5 +1,4 @@
 import UIKit
-import Firebase
 import Flutter
 
 @UIApplicationMain
