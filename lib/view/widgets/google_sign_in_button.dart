@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:blanch_menu_app/view/pages/user_info_screen.dart';
 import 'package:blanch_menu_app/utils/authentication.dart';
 
+import '../../stationPage.dart';
+
 class GoogleSignInButton extends StatefulWidget {
   @override
   _GoogleSignInButtonState createState() => _GoogleSignInButtonState();
