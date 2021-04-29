@@ -1,24 +1,40 @@
+import 'package:blanch_menu_app/view/widgets/inherited_widgets/inherited_post_model.dart';
 import 'package:flutter/material.dart';
 import 'package:blanch_menu_app/helper/demo_values.dart';
+import 'package:blanch_menu_app/model/post_model.dart';
+import 'package:blanch_menu_app/view/pages/post_page.dart';
 
 class PostCard extends StatelessWidget {
-  const PostCard({Key? key}) : super(key: key);
+  final PostModel postData;
+
+  const PostCard({Key? key, required this.postData}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: 6 / 3,
-      child: Card(
-        elevation: 2,
-        child: Container(
-          margin: const EdgeInsets.all(4.0),
-          padding: const EdgeInsets.all(4.0),
-          child: Column(
-            children: <Widget>[
-              _Post(),
-              Divider(color: Colors.grey),
-              _PostDetails(),
-            ],
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(context,
+            MaterialPageRoute(builder: (BuildContext context) {
+          return PostPage(postData: postData);
+        }));
+      },
+      child: AspectRatio(
+        aspectRatio: 6 / 3,
+        child: Card(
+          elevation: 2,
+          child: Container(
+            margin: const EdgeInsets.all(4.0),
+            padding: const EdgeInsets.all(4.0),
+            child: InheritedPostModel(
+              postData: postData,
+              child: Column(
+                children: <Widget>[
+                  _Post(),
+                  Divider(color: Colors.grey),
+                  _MenuItem(),
+                ],
+              ),
+            ),
           ),
         ),
       ),
@@ -33,94 +49,58 @@ class _Post extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       flex: 3,
-      child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[_PostTitle(), _PostText()]),
+      child: Row(children: <Widget>[_Station(), _Meal()]),
     );
   }
 }
 
-class _PostTitle extends StatelessWidget {
-  const _PostTitle({Key? key}) : super(key: key);
+class _Station extends StatelessWidget {
+  const _Station({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final TextStyle? titleTheme = Theme.of(context).textTheme.headline5;
-    final String title = DemoValues.postTitle;
+    final PostModel postData = InheritedPostModel.of(context).postData;
+    final TextStyle? stationTheme = Theme.of(context).textTheme.headline5;
+    final String station = postData.station;
 
     return Expanded(
       flex: 3,
       child: Padding(
         padding: const EdgeInsets.only(left: 4.0),
-        child: Text(title, style: titleTheme),
+        child: Text(station, style: stationTheme),
       ),
     );
   }
 }
 
-class _PostText extends StatelessWidget {
-  const _PostText({Key? key}) : super(key: key);
+class _Meal extends StatelessWidget {
+  const _Meal({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final TextStyle? pTextTheme = Theme.of(context).textTheme.subtitle1;
-    final String pText = DemoValues.postText;
-
-    return Expanded(flex: 7, child: Text(pText, style: pTextTheme));
-  }
-}
-
-class _PostDetails extends StatelessWidget {
-  const _PostDetails({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        _UserNameAndEmail(),
-        _PostTimeStamp(),
-      ],
-    );
-  }
-}
-
-class _UserNameAndEmail extends StatelessWidget {
-  const _UserNameAndEmail({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    final TextStyle? nameTheme = Theme.of(context).textTheme.subtitle;
-    final TextStyle? emailTheme = Theme.of(context).textTheme.body1;
+    final PostModel postData = InheritedPostModel.of(context).postData;
+    final TextStyle? mealTheme = Theme.of(context).textTheme.headline5;
+    final String meal = postData.meal;
 
     return Expanded(
-      flex: 5,
+      flex: 3,
       child: Padding(
-        padding: const EdgeInsets.all(4.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text(DemoValues.userName, style: nameTheme),
-            SizedBox(height: 2.0),
-            Text(DemoValues.userEmail, style: emailTheme),
-          ],
-        ),
+        padding: const EdgeInsets.only(left: 4.0),
+        child: Text(meal, style: mealTheme),
       ),
     );
   }
 }
 
-class _PostTimeStamp extends StatelessWidget {
-  const _PostTimeStamp({Key? key}) : super(key: key);
+class _MenuItem extends StatelessWidget {
+  const _MenuItem({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final TextStyle? timeTheme = Theme.of(context).textTheme.button;
+    final PostModel postData = InheritedPostModel.of(context).postData;
+    final TextStyle? menuItemTheme = Theme.of(context).textTheme.headline5;
+    final String menuItem = postData.menu_item;
 
-    return Expanded(
-      flex: 2,
-      child: Text(DemoValues.postTime, style: timeTheme),
-    );
+    return Expanded(flex: 7, child: Text(menuItem, style: menuItemTheme));
   }
 }
