@@ -1,7 +1,7 @@
 import 'package:blanch_menu_app/view/pages/home_page.dart';
 import 'package:flutter/material.dart';
-import './question.dart';
-import './answer.dart';
+import '../../question.dart';
+import '../../answer.dart';
 
 class StationPage extends StatelessWidget {
   @override
@@ -24,7 +24,19 @@ class StationPage extends StatelessWidget {
           backgroundColor: Colors.green,
         ),
         body: Column(children: [
-          Question("SELECT A STATION"),
+          Container(
+            height: 20,
+          ),
+          //Image.asset('assets/mhcLogo.png'),
+          Flexible(
+            flex: 1,
+            child: Image.asset(
+              'assets/mhc.png',
+              height: 50,
+            ),
+          ),
+          Question("Select a Station"),
+
           Answer(stations[0]),
           Answer(stations[1]),
           Answer(stations[2]),
