@@ -12,7 +12,7 @@ class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CustomColors.firebaseNavy,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(
@@ -32,23 +32,23 @@ class _SignInScreenState extends State<SignInScreen> {
                     Flexible(
                       flex: 1,
                       child: Image.asset(
-                        'assets/firebase_logo.png',
-                        height: 160,
+                        'assets/silverware.png',
+                        height: 120,
                       ),
                     ),
                     SizedBox(height: 20),
                     Text(
-                      'FlutterFire',
+                      'The Blanch App',
                       style: TextStyle(
-                        color: CustomColors.firebaseYellow,
+                        color: Colors.green,
                         fontSize: 40,
                       ),
                     ),
                     Text(
-                      'Authentication',
+                      '"First we eat, then we do everything else"-M.F.K Fisher',
                       style: TextStyle(
-                        color: CustomColors.firebaseOrange,
-                        fontSize: 40,
+                        color: Colors.green,
+                        fontSize: 13,
                       ),
                     ),
                   ],

@@ -1,3 +1,4 @@
+import 'package:blanch_menu_app/view/pages/stationPage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:blanch_menu_app/view/pages/user_info_screen.dart';
@@ -23,7 +24,7 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
             )
           : OutlinedButton(
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.white),
+                backgroundColor: MaterialStateProperty.all(Colors.green),
                 shape: MaterialStateProperty.all(
                   RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(40),
@@ -44,9 +45,10 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
                 if (user != null) {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
-                      builder: (context) => StationPage(), //UserInfoScreen(
-                      //user: user,
-                      //),
+                      builder: (context) => StationPage(),
+                      // UserInfoScreen(
+                      //   user: user,
+                      // ),
                     ),
                   );
                 }
@@ -67,8 +69,8 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
                         'Sign in with Google',
                         style: TextStyle(
                           fontSize: 20,
-                          color: Colors.black54,
-                          fontWeight: FontWeight.w600,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w400,
                         ),
                       ),
                     )
