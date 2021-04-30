@@ -16,6 +16,7 @@ class HomePage extends StatelessWidget {
       // Create AppBar (at top of page)
       appBar: AppBar(
         title: Text("Blanch Menu App"),
+        backgroundColor: Colors.green,
       ),
       // Create Body (ListView has default scroll functionality)
       // .builder() function takes itsm cont (num widgets to build) and

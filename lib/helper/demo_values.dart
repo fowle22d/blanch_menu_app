@@ -10,20 +10,50 @@ class DemoValues {
     ),
     PostModel(
       id: "2",
-      meal: "Breakfast",
+      meal: "Lunch",
       station: "Classics",
       menu_item: "Miso Soup",
     ),
     PostModel(
       id: "3",
-      meal: "Breakfast",
+      meal: "Dinner",
       station: "Classics",
       menu_item: "Rice Congee",
     ),
     PostModel(
       id: "4",
       meal: "Breakfast",
-      station: "Classics",
+      station: "Grill",
+      menu_item: "Steel-cut Oatmeal",
+    ),
+    PostModel(
+      id: "4",
+      meal: "Breakfast",
+      station: "Global",
+      menu_item: "Steel-cut Oatmeal",
+    ),
+    PostModel(
+      id: "4",
+      meal: "Breakfast",
+      station: "Wok",
+      menu_item: "Steel-cut Oatmeal",
+    ),
+    PostModel(
+      id: "4",
+      meal: "Breakfast",
+      station: "Halal",
+      menu_item: "Steel-cut Oatmeal",
+    ),
+    PostModel(
+      id: "4",
+      meal: "Breakfast",
+      station: "Harvest",
+      menu_item: "Steel-cut Oatmeal",
+    ),
+    PostModel(
+      id: "4",
+      meal: "Breakfast",
+      station: "Kosher",
       menu_item: "Steel-cut Oatmeal",
     ),
   ];
