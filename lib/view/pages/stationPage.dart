@@ -1,12 +1,18 @@
 import 'package:blanch_menu_app/view/pages/home_page.dart';
+import 'package:blanch_menu_app/view/pages/user_info_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../../question.dart';
 import '../../answer.dart';
 
 class StationPage extends StatelessWidget {
+  const StationPage({Key? key, required User user})
+      : _user = user,
+        super(key: key);
+  final User _user;
+
   @override
   Widget build(BuildContext ctx) {
-    //var stations = ["Grill", "Global", "Halal"];
     var stations = [
       "Classics",
       "Grill",
@@ -22,6 +28,22 @@ class StationPage extends StatelessWidget {
         appBar: AppBar(
           title: Text("The Blanch App"),
           backgroundColor: Colors.green,
+          actions: [
+            Padding(
+              padding: EdgeInsets.only(right: 20),
+              child: GestureDetector(
+                child: Icon(Icons.person),
+                onTap: () {
+                  Navigator.push(ctx,
+                      MaterialPageRoute(builder: (BuildContext context) {
+                    return UserInfoScreen(user: _user);
+                    ;
+                  }));
+                  // UserInfoScreen(user: _user);
+                },
+              ),
+            )
+          ],
         ),
         body: Column(children: [
           Container(

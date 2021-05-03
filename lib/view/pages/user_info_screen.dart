@@ -49,11 +49,11 @@ class _UserInfoScreenState extends State<UserInfoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CustomColors.firebaseNavy,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: CustomColors.firebaseNavy,
-        title: AppBarTitle(),
+        backgroundColor: Colors.green,
+        title: Text("The Blanch App"),
       ),
       body: SafeArea(
         child: Padding(
@@ -93,34 +93,33 @@ class _UserInfoScreenState extends State<UserInfoScreen> {
               Text(
                 'Hello',
                 style: TextStyle(
-                  color: CustomColors.firebaseGrey,
-                  fontSize: 26,
+                  color: Colors.black,
+                  fontSize: 19,
                 ),
               ),
               SizedBox(height: 8.0),
               Text(
                 _user.displayName!,
                 style: TextStyle(
-                  color: CustomColors.firebaseYellow,
+                  color: Colors.green[700],
                   fontSize: 26,
                 ),
               ),
-              SizedBox(height: 8.0),
+              SizedBox(height: 7.0),
               Text(
-                '( ${_user.email!} )',
+                '(${_user.email!})',
                 style: TextStyle(
-                  color: CustomColors.firebaseOrange,
+                  color: Colors.grey,
                   fontSize: 20,
                   letterSpacing: 0.5,
                 ),
               ),
-              SizedBox(height: 24.0),
+              SizedBox(height: 19.0),
               Text(
                 'You are now signed in using your Google account. To sign out of your account click the "Sign Out" button below.',
                 style: TextStyle(
-                    color: CustomColors.firebaseGrey.withOpacity(0.8),
-                    fontSize: 14,
-                    letterSpacing: 0.2),
+                    color: Colors.black, fontSize: 14, letterSpacing: 0.2),
+                textAlign: TextAlign.center,
               ),
               SizedBox(height: 16.0),
               _isSigningOut
@@ -130,7 +129,7 @@ class _UserInfoScreenState extends State<UserInfoScreen> {
                   : ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all(
-                          Colors.redAccent,
+                          Colors.green[700],
                         ),
                         shape: MaterialStateProperty.all(
                           RoundedRectangleBorder(
