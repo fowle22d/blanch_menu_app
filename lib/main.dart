@@ -4,7 +4,9 @@ import 'package:flutter/material.dart'; // Material contains logic for prebuilt 
 //import 'view/pages/home_page.dart';
 
 // main calls runApp on the root widget for the app
-void main() => runApp(BlanchMenuApp());
+void main() {
+  runApp(BlanchMenuApp());
+}
 
 // Create stateless Root widget
 class BlanchMenuApp extends StatelessWidget {
