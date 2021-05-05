@@ -1,9 +1,11 @@
 import 'package:blanch_menu_app/helper/demo_values.dart';
 import 'package:blanch_menu_app/view/widgets/post_card.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:blanch_menu_app/Components/timeButton.dart';
 
 class Global extends StatelessWidget {
+  final User _user;
+  const Global({required User user}) : _user = user;
   @override
   Widget build(BuildContext context) {
     List postSpec = DemoValues.posts;

@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:blanch_menu_app/Menu/classics.dart';
 import 'package:blanch_menu_app/Menu/global.dart';
@@ -9,7 +10,9 @@ import 'Menu/grill.dart';
 
 class Answer extends StatelessWidget {
   final String answerText;
-  Answer(this.answerText);
+  final User user;
+
+  Answer(this.answerText, this.user);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -29,7 +32,7 @@ class Answer extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return Classics();
+                  return Classics(user: user);
                 },
               ),
             );
@@ -38,7 +41,7 @@ class Answer extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return Grill();
+                  return Grill(user: user);
                 },
               ),
             );
@@ -47,7 +50,7 @@ class Answer extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return Global();
+                  return Global(user: user);
                 },
               ),
             );
@@ -56,7 +59,7 @@ class Answer extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return Wok();
+                  return Wok(user: user);
                 },
               ),
             );
@@ -65,7 +68,7 @@ class Answer extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return Halal();
+                  return Halal(user: user);
                 },
               ),
             );
@@ -74,7 +77,7 @@ class Answer extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return Harvest();
+                  return Harvest(user: user);
                 },
               ),
             );
@@ -83,7 +86,7 @@ class Answer extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return Kosher();
+                  return Kosher(user: user);
                 },
               ),
             );
