@@ -68,12 +68,13 @@ class PostCard extends StatelessWidget {
                         Container(
                           width: 20,
                         ),
-                        Text(
+                        Flexible(
+                            child: Text(
                           postData.menu_item,
                           style: TextStyle(
                             fontSize: 18,
                           ),
-                        )
+                        ))
                       ],
                     ),
 

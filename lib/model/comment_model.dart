@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
 
-class PostModel {
+class CommentModel {
   final String id;
   final String user;
   final String comment;
-  final String rating;
+  //final String rating;
+  final String menu_item;
+  final String station;
+  final String time;
 
-  const PostModel({
-    required this.id,
-    required this.user,
-    required this.comment,
-    required this.rating,
-  });
+  const CommentModel(
+      {required this.id,
+      required this.user,
+      required this.comment,
+      //required this.rating,
+      required this.menu_item,
+      required this.station,
+      required this.time});
 }

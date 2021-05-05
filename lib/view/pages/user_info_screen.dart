@@ -168,3 +168,12 @@ class _UserInfoScreenState extends State<UserInfoScreen> {
     );
   }
 }
+
+// class UserInfo extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+      
+//     );
+//   }
+// }
