@@ -40,7 +40,7 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
                   _isSigningIn = false;
                 });
 
-                if (user != null) {
+                if (user != null && user.email!.contains("@mtholyoke.edu")) {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
                       builder: (context) => StationPage(user: user),
@@ -74,6 +74,7 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
                     )
                   ],
                 ),
+                
               ),
             ),
     );
