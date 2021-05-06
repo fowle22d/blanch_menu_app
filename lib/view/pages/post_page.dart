@@ -11,8 +11,10 @@ import 'package:intl/intl.dart';
 
 class PostPage extends StatelessWidget {
   final PostModel postData;
+  final User user;
 
-  const PostPage({Key? key, required this.postData}) : super(key: key);
+  const PostPage({Key? key, required this.postData, required this.user})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +45,8 @@ class PostPage extends StatelessWidget {
                       String time = dateFormat.format(DateTime.now());
 
                       FirebaseFirestore.instance.collection("Comments").add({
-                        'userId': "lucy",
+                        'userId': user.email,
+                        "userName": user.photoURL,
                         "station": postData.station,
                         "menuItem": postData.menu_item,
                         "text": textcontroller.text,
@@ -53,7 +56,8 @@ class PostPage extends StatelessWidget {
                       FirebaseFirestore.instance
                           .collection(postData.station)
                           .add({
-                        'userId': "Saman",
+                        'userId': user.email,
+                        "userName": user.photoURL,
                         "station": postData.station,
                         "menuItem": postData.menu_item,
                         "text": textcontroller.text,

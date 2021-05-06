@@ -30,7 +30,10 @@ class Wok extends StatelessWidget {
         body: ListView.builder(
           itemCount: classicList.length,
           itemBuilder: (BuildContext context, int index) {
-            return PostCard(postData: classicList[index]);
+            return PostCard(
+              postData: classicList[index],
+              user: _user,
+            );
           },
         ),
       ),
