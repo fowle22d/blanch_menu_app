@@ -28,7 +28,7 @@ class CommDisplay extends StatelessWidget {
           children: snapshot.data!.docs.map((DocumentSnapshot document) {
             var commentData2 = new CommentModel(
                 id: document.data()!['userId'],
-                user: document.data()!['userId'],
+                user: document.data()!['userName'],
                 comment: document.data()!['text'],
                 menu_item: document.data()!['menuItem'],
                 station: document.data()!['station'],

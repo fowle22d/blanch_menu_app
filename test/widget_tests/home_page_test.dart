@@ -8,7 +8,7 @@ void main() {
     // Here it's wrapped in MaterialApp b/c it has to be the root for widgets lower on the tree
     // The main file (aka Blanch Menu App) returns a MaterialApp, so it doesn't need to be wrapped in one
     // Simple rule: if the widget doesn't have a MaterialApp, wrap it in one
-    await tester.pumpWidget(MaterialApp(home: HomePage()));
+    //await tester.pumpWidget(MaterialApp(home: HomePage()));
 
     // Test: Scaffold widget
     expect(find.byType(Scaffold), findsOneWidget);

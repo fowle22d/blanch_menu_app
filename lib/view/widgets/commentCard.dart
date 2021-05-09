@@ -1,8 +1,5 @@
 import 'package:blanch_menu_app/model/comment_model.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-//import 'package:cloud_firestore/cloud_firestore.dart';
 
 class CommentCard extends StatelessWidget {
   final CommentModel commentData;
@@ -23,13 +20,16 @@ class CommentCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                // color: Colors.teal.shade700,
-                height: 40,
-                width: 40,
-                padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
-                decoration: BoxDecoration(
-                    shape: BoxShape.circle, color: Colors.teal.shade700),
+              ClipOval(
+                child: Material(
+                  color: Colors.grey.withOpacity(0.3),
+                  child: Image.network(
+                    commentData.user,
+                    width: 45,
+                    height: 45,
+                    //fit: 30,
+                  ),
+                ),
               ),
               Container(width: 15),
               Column(

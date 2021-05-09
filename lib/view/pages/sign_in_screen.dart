@@ -51,6 +51,16 @@ class _SignInScreenState extends State<SignInScreen> {
                         fontSize: 13,
                       ),
                     ),
+                    Container(
+                      height: 15
+                    ),
+                    Text(
+                    'Please log in with Mount Holyoke email.',
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 13,
+                    ),
+                  ),
                   ],
                 ),
               ),

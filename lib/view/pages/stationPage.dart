@@ -78,7 +78,9 @@ class StationPage extends StatelessWidget {
                   ctx,
                   MaterialPageRoute(
                     builder: (ctx) {
-                      return HomePage();
+                      return HomePage(
+                        user: _user,
+                      );
                     },
                   ),
                 );
