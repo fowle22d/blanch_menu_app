@@ -1,5 +1,13 @@
 import 'package:blanch_menu_app/model/post_model.dart';
 
+/*
+ * These are the hard-coded values for the menu items.
+ * These were created following the PostModel stucture.
+ * We hard-coded these values because we could not fine
+ * a way for the CSV file to be read into the prgram without
+ * having to reformat the document each time we scraped new
+ * data. Each menu item has id, meal, station and menu item.
+ */
 class DemoValues {
   static final List<PostModel> posts = [
     PostModel(

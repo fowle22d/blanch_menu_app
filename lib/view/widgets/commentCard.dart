@@ -1,6 +1,11 @@
 import 'package:blanch_menu_app/model/comment_model.dart';
 import 'package:flutter/material.dart';
 
+/**
+ * CommentCard takes in a comment model object, returning a card widget 
+ * that displays the information in a comment format. These are then
+ * displayed in the ListView in CommDisplay.
+ */
 class CommentCard extends StatelessWidget {
   final CommentModel commentData;
   const CommentCard({Key? key, required this.commentData}) : super(key: key);

@@ -9,6 +9,15 @@ import 'package:blanch_menu_app/model/post_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:intl/intl.dart';
 
+/**
+ * Post page takes in a post_model object and user_info 
+ * and creates a page for the menu item. Post page allows users to 
+ * write a comment on the menu_item which gets added to the Firebase 
+ * database. The page also displays all the comments made on the menu 
+ * item by calling commDisplay.dart. 
+ * Comments are stored in a general comment location and in a 
+ * station-specific location in Firebase.
+ */
 class PostPage extends StatelessWidget {
   final PostModel postData;
   final User user;

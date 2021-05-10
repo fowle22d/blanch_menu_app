@@ -1,8 +1,12 @@
 import 'package:blanch_menu_app/view/pages/stationPage.dart';
 import 'package:blanch_menu_app/view/pages/sign_in_screen.dart';
 import 'package:flutter/material.dart'; // Material contains logic for prebuilt Flutter widgets
-//import 'view/pages/home_page.dart';
 
+//import 'view/pages/home_page.dart';
+/**
+ * Main calls runApp, whihc starts the application for the menu and then
+ * creates the root widget, which is the sign-in screen.
+ */
 // main calls runApp on the root widget for the app
 void main() {
   runApp(BlanchMenuApp());

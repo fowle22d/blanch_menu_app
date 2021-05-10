@@ -5,6 +5,12 @@ import 'package:flutter/material.dart';
 import '../../question.dart';
 import '../../answer.dart';
 
+/**
+ * Station Page displays the station names as buttons, allowing users 
+ * to select a station, which will then redirect them to the 
+ * respective menu page. Uses the question and answer classes to 
+ * make buttons display correctly.
+ */
 class StationPage extends StatelessWidget {
   const StationPage({Key? key, required User user})
       : _user = user,

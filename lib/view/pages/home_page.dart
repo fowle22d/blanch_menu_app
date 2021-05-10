@@ -7,6 +7,14 @@ import 'package:flutter/material.dart';
 import 'package:blanch_menu_app/helper/demo_values.dart';
 import 'package:blanch_menu_app/view/widgets/post_card.dart';
 
+/**
+ * The Home Page creates the comment feed. It reads from the comments 
+ * collection in firebase (i.e., all of the comments regardless of station), 
+ * creates a comment model for each comment using the data, and then passes 
+ * the model into a comment card, which then gets displayed in a list 
+ * view as the Comment Feed.
+ */
+
 // Create stateless HomePage widget
 class HomePage extends StatelessWidget {
   // The constructor for the HomePage widget

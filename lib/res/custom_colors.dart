@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+/**
+ * CustomColors is provided by Firebase to make it's UI
+ * appear with the colors the authors want to use.
+ * Not edited by the Blanch Menu Team.
+ */
 class CustomColors {
   static final Color firebaseNavy = Color(0xFF2C384A);
   static final Color firebaseOrange = Color(0xFFF57C00);

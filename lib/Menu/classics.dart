@@ -2,8 +2,14 @@ import 'package:blanch_menu_app/helper/demo_values.dart';
 import 'package:blanch_menu_app/view/widgets/post_card.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:blanch_menu_app/Components/timeButton.dart';
 
+/*
+ * The Classics station page gets all of the menu_items that list
+ * "classics" as their station (by searching through the DemoValues
+ * and adding each classics item to a new list) and then creates a
+ * ListView, which creates a list of PostCards, displays them on the
+ * screen and allows the user to scoll to see all of the cards.
+ */
 class Classics extends StatelessWidget {
   final User _user;
   const Classics({required User user}) : _user = user;

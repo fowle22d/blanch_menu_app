@@ -2,8 +2,14 @@ import 'package:blanch_menu_app/helper/demo_values.dart';
 import 'package:blanch_menu_app/view/widgets/post_card.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:blanch_menu_app/Components/timeButton.dart';
 
+/*
+ * The Wok station page gets all of the menu_items that list
+ * "wok" as their station (by searching through the DemoValues
+ * and adding each wok item to a new list) and then creates a
+ * ListView, which creates a list of PostCards, displays them on the
+ * screen and allows the user to scoll to see all of the cards.
+ */
 class Wok extends StatelessWidget {
   final User _user;
   const Wok({required User user}) : _user = user;
