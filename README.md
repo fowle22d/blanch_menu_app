@@ -18,23 +18,23 @@ Thank you for opening up the blanch menu app repository.
 
 **Road Map of Directory Structure:** 
 1. Blanch_menu_app directory: 
-    a) Assets → Contains images that we used within the application (MHC logo, etc.)
-    b) Build → Contains files relating to firebase, this file helped us connect firebase to our application
-    c) Android/Ios/web → These folders are auto-created when one creates a flutter project, to help the app run on both ios, android, and web platforms. 
-    d) **Lib** → Lib is where our main code lies. 
+    * Assets → Contains images that we used within the application (MHC logo, etc.)
+    * Build → Contains files relating to firebase, this file helped us connect firebase to our application
+    * Android/Ios/web → These folders are auto-created when one creates a flutter project, to help the app run on both ios, android, and web platforms. 
+    * **Lib** → Lib is where our main code lies. 
 2. Lib directory: 
-    a) **Main.dart** → Calls runApp() on the root widget of the app, this root widget calls SignInScreen(), which displays a page telling the user to log in with google using their MHC email. This code is located in sign_in_screen.dart, which can be navigated to by going to view → pages → sign_in_screen.dart. 
-    b) Helper → This folder contains demo_values.dart, which is where the hardcoded values of the menu Items are located.
-    c) **View** → This directory contains the code of the pages and widgets that are displayed in the application
-    d) **Model** → This folder contains the classes for the comment objects and menu item objects; comment_model.dart and post_model.dart respectively.  
-    e) **Menu** → This folder contains the code for each station page, displaying the stations data in the human readable way
+    * **Main.dart** → Calls runApp() on the root widget of the app, this root widget calls SignInScreen(), which displays a page telling the user to log in with google using their MHC email. This code is located in sign_in_screen.dart, which can be navigated to by going to view → pages → sign_in_screen.dart. 
+    * Helper → This folder contains demo_values.dart, which is where the hardcoded values of the menu Items are located.
+    * **View** → This directory contains the code of the pages and widgets that are displayed in the application
+    * **Model** → This folder contains the classes for the comment objects and menu item objects; comment_model.dart and post_model.dart respectively.  
+    * **Menu** → This folder contains the code for each station page, displaying the stations data in the human readable way
 3. View directory: 
-    a) Pages → this folder contains code for the display of specific pages, for example the user Information page is created with user_info_screen.dart. This includes the comment feed page, the “select a station page,” and the sign in screen. 
-    b) Widgets → this folder contains code that takes in objects, or specific pieces of information, returning widgets that display the data in a human readable fashion, which can then be added to a page in the application. 
+    * Pages → this folder contains code for the display of specific pages, for example the user Information page is created with user_info_screen.dart. This includes the comment feed page, the “select a station page,” and the sign in screen. 
+    * Widgets → this folder contains code that takes in objects, or specific pieces of information, returning widgets that display the data in a human readable fashion, which can then be added to a page in the application. 
 
 **List of Functionality:**
 * Ability to log in to application using Google authentication 
-    - Will only allow people with mount holyoke email to log in 
+    - Will only allow people with Mount Holyoke email to log in 
 *  Displays different stations 
 * Displays menu Items within those stations, differentiating between breakfast, lunch, and dinner items
 * Allows users to click on menu Item and read comments made by previous users on the item 
