@@ -4,6 +4,12 @@ import 'package:blanch_menu_app/view/widgets/commentCard.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+/* 
+ * The CommDisplay gets all of the information necesary for 
+ * a comment to be created, creates a comment card and then passes the 
+ * comment cards into a ListView. It get the data from Friebase and stores
+ * it in the format dictated by comment_model.
+ */
 class CommDisplay extends StatelessWidget {
   final PostModel postData;
 

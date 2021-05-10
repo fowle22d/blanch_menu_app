@@ -5,6 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:blanch_menu_app/model/post_model.dart';
 import 'package:blanch_menu_app/view/pages/post_page.dart';
 
+/**
+ * PostCard takes a PostModel and user data and creates a UI widget
+ * that displays the passed in menu_item info.
+ */
 class PostCard extends StatelessWidget {
   final PostModel postData;
   final User user;

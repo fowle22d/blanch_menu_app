@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:blanch_menu_app/res/custom_colors.dart';
 
+/**
+ * AppBarTitle is a file associated with Firebase authentication. It is 
+ * provided code that the Blanch Menu Team did not edit.
+ */
 class AppBarTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

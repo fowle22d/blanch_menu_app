@@ -3,6 +3,11 @@ import 'package:blanch_menu_app/res/custom_colors.dart';
 import 'package:blanch_menu_app/utils/authentication.dart';
 import 'package:blanch_menu_app/view/widgets/google_sign_in_button.dart';
 
+/**
+ * Sign In Screen displays a sign in screen with a button that will 
+ * redirect you to the google login page, allowing users to log in 
+ * with their google account. 
+ */
 class SignInScreen extends StatefulWidget {
   @override
   _SignInScreenState createState() => _SignInScreenState();
@@ -51,16 +56,14 @@ class _SignInScreenState extends State<SignInScreen> {
                         fontSize: 13,
                       ),
                     ),
-                    Container(
-                      height: 15
-                    ),
+                    Container(height: 15),
                     Text(
-                    'Please log in with Mount Holyoke email.',
-                    style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 13,
+                      'Please log in with Mount Holyoke email.',
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 13,
+                      ),
                     ),
-                  ),
                   ],
                 ),
               ),

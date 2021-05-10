@@ -5,6 +5,11 @@ import 'package:blanch_menu_app/view/pages/user_info_screen.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
+/**
+ * Authentication is provided by Firebase to make sign in
+ * and sign out possible.
+ * Not edited by the Blanch Menu Team.
+ */
 class Authentication {
   static SnackBar customSnackBar({required String content}) {
     return SnackBar(

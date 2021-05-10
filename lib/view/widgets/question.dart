@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+/**
+ * Question is a helper widget which allows text to be displayed 
+ * in an aesthetically pleasing way on the app.
+ */
 class Question extends StatelessWidget {
   final String questionText;
   Question(this.questionText);

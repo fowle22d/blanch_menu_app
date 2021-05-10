@@ -5,6 +5,13 @@ import 'package:blanch_menu_app/view/pages/sign_in_screen.dart';
 import 'package:blanch_menu_app/utils/authentication.dart';
 import 'package:blanch_menu_app/view/widgets/app_bar_title.dart';
 
+/**
+ * User Info Screen displays the users information, including profile pic, 
+ * display name, and email, and gives them the option to log out of their 
+ * google account, in turn logging them out of the app.
+ * It is accessed by clicking a button in the top right corner of the 
+ * station page.
+ */
 class UserInfoScreen extends StatefulWidget {
   const UserInfoScreen({Key? key, required User user})
       : _user = user,
@@ -173,7 +180,7 @@ class _UserInfoScreenState extends State<UserInfoScreen> {
 //   @override
 //   Widget build(BuildContext context) {
 //     return Container(
-      
+
 //     );
 //   }
 // }

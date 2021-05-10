@@ -8,6 +8,11 @@ import 'package:blanch_menu_app/Menu/kosher.dart';
 import 'package:blanch_menu_app/Menu/wok.dart';
 import 'Menu/grill.dart';
 
+/**
+ * Answer creates a button widget that is then displayed on the 
+ * station page. It gets passed a station name, and returns a button 
+ * that has the ability to navigate to the respective menu page.
+ */
 class Answer extends StatelessWidget {
   final String answerText;
   final User user;
